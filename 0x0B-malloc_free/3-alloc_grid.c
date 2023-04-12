@@ -26,7 +26,7 @@ for (i = 0; i < height; i++)
 	if (array[i] == NULL)
 	{
 		for (i--; i >= 0; i--)
-			free(array[1];
+			free(array[1]);
 		free(array);
 		return (NULL);
 	}
