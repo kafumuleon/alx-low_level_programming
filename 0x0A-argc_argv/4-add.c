@@ -21,15 +21,15 @@ int main(int argc, char **argv)
 
 	for (i = 1; argv[i];  i++)
 	{	
-		n = strtol(argv[i], &flag, 10);
+	n = strtol(argv[i], &flag, 10);
 	if (*flag)
 	{	
-		rintf("Error\n");
-		return (1);
+	printf("Error\n");
+	return (1);
 	}	
 	else
 	{
-		sum += n;
+	sum += n;
 	}
 	}
 	printf("%d\n", sum);
