@@ -3,7 +3,7 @@
 /**
  * len - string length
  * @s: string
- * Return: results
+ * Return: result
  */
 
 int len(char *s)
@@ -22,7 +22,7 @@ int len(char *s)
  * Return: 1 or -1 (int)
  */
 
-int create_file(const char *filename, char  *text_content)
+int create_file(const char *filename, char *text_content)
 {
 	int openfile;
 	int content_len;
@@ -33,7 +33,7 @@ int create_file(const char *filename, char  *text_content)
 	if (text_content)
 		content_len = len(text_content);
 
-	openfile = open(filename, O_CREAT | O_WRONLY | O_STRUNC, 0600);
+	openfile = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (openfile == -1)
 		return (-1);
 
